@@ -1,8 +1,9 @@
-def greet_user(name):
-    print('\nHi there ' + name + "\n")
+def greet_user(first_name, last_name):
+    print(f'Hi {first_name} {last_name}')
     print('Welcome aboard! \n')
 
 
 print("Start")
-greet_user(input("What's your name? "))
+greet_user('John', 'Smith')
+greet_user(last_name='Leonard', first_name='Michel')
 print("Finish")
