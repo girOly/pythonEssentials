@@ -5,7 +5,9 @@ import sys
 
 
 # Creates the Parser
-my_parser = argparse.ArgumentParser(description='List the content of a Folder')
+my_parser = argparse.ArgumentParser(prog='myls',
+                                    usage='%(prog)s [options] path',
+                                    description='List the content of a folder')
 
 # Add the arguments
 
@@ -22,3 +24,5 @@ input_path = args.Path
 if not os.path.isdir(input_path):
     print('The path specified does not exist')
     sys.exit()
+
+print('\n'.join(os.listdir(input_path)))
