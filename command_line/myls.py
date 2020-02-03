@@ -5,10 +5,9 @@ import sys
 
 
 # Creates the Parser
-my_parser = argparse.ArgumentParser(prog='myls',
-                                    usage='%(prog)s [options] path',
-                                    description='List the content of a folder')
-
+my_parser = argparse.ArgumentParser(description='List the content of a folder',
+                                    epilog='Enjoy the program! :)',
+                                    prefix_chars='/')
 # Add the arguments
 
 my_parser.add_argument('Path',
