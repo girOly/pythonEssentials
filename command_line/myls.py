@@ -7,7 +7,8 @@ import sys
 # Creates the Parser
 my_parser = argparse.ArgumentParser(description='List the content of a folder',
                                     epilog='Enjoy the program! :)',
-                                    prefix_chars='/')
+                                    prefix_chars='/',
+                                    add_help=False)
 # Add the arguments
 
 my_parser.add_argument('Path',
